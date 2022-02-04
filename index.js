@@ -31,6 +31,5 @@ app.use(QRRequestHandler);
 const clusterise = require("./utilities/cluster");
 
 
-
 const port = process.env.PORT || process.env.LOCAL_PORT;
 clusterise(port, numOfCPUs, app);

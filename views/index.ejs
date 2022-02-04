@@ -9,13 +9,32 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/main.css">
     <script src="/main.js" defer></script>
+    <script src="/home.js" defer></script>
 </head>
 <body>
     <%- include("./partials/_header.ejs") %>
 
+    <main class="home">
+        <div class="container">
+            <div class="alert-box-wrapper">
+                <div class="alert-box center">
+                    <div class="qr-placeholder">
+                        <i class="large material-icons grey-text text-darken-2">announcement</i>
+                        <p class="flow-text grey-text">Your most recent QR code will be here</p>
+                    </div>
+
+                    <div class="qr-code">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAB0CAYAAABUmhYnAAAAAklEQVR4AewaftIAAALPSURBVO3BQa7jSAwFwUxC97/yGy+5KkCQ7OlPMMJ8sMYo1ijFGqVYoxRrlGKNUqxRijVKsUYp1ijFGqVYoxRrlGKNUqxRijXKxUMqv5SEO1S6JNyh8ktJeKJYoxRrlGKNcvGyJLxJ5USlS8IdKl0STpLwJpU3FWuUYo1SrFEuvkzljiTckYSTJHQqXRKeULkjCd9UrFGKNUqxRrkYRuUkCZMVa5RijVKsUS7+OJWTJHQqJ0n4y4o1SrFGKdYoF1+WhG9KQqdyRxKeSMK/pFijFGuUYo1y8TKVX1LpktCpdEnoVLoknKj8y4o1SrFGKdYo5oNBVE6SMFmxRinWKMUa5eIhlS4JnUqXhE6lS0Kn0iXhJAmdyolKl4Q7VLoknKh0SXhTsUYp1ijFGsV88EUqTyShU+mScKJykoROpUtCp9Il4Q6VkyQ8UaxRijVKsUa5eEilS8JJEu5QOVH5JpU7VP5PxRqlWKMUaxTzwQ+p3JGEE5VvSkKncpKEE5UuCW8q1ijFGqVYo5gPHlDpktCpdEnoVLokdCpdEk5U7khCp3JHEjqVLgmdykkSnijWKMUapVijmA/+MJUuCW9S6ZJwotIl4USlS8ITxRqlWKMUa5SLh1R+KQldEjqVLgknKl0SuiScqNyh8k3FGqVYoxRrlIuXJeFNKnckoVPpktAl4USlS0KXhCeS8KZijVKsUYo1ysWXqdyRhDtUnlDpknCHykkSTlS6JDxRrFGKNUqxRrn445JwotKpdEnoVLokdCpdEp5IwpuKNUqxRinWKBd/nMo3qTyh0iWhU+mS8ESxRinWKMUa5eLLkvBNSThROVE5SUKn0qmcJKFT6ZLwpmKNUqxRijXKxctUfknliSR0Kp3KSRJOVE5UuiQ8UaxRijVKsUYxH6wxijVKsUYp1ijFGqVYoxRrlGKNUqxRijVKsUYp1ijFGqVYoxRrlGKN8h+dsx746sV0YgAAAABJRU5ErkJggg==" alt="Error">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 
+    <!-- page loader -->
+    <%- include("./partials/_pageloader.ejs") %>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
 </body>

@@ -1,3 +1,55 @@
+/* CSS RESETS */
 body {
     
+}
+
+/* PAGE LOADER ANIMATION */
+.page-cover {
+    background-color: #fefefe;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PROGRESS INDICATOR */
+#progessIndicator {
+    display: none;
+}
+
+
+/* HOME VIEW */
+.home {
+    
+}
+
+.home .alert-box-wrapper {
+    /* border: 1px solid red; */
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .alert-box-wrapper .alert-box {
+    /* border: 1px solid blue; */
+
+}
+
+
+
+
+
+/* UPLOAD VIEW */
+.upload {
+
+}
+
+.upload .divider {
+    margin: 18px 0;
 }
