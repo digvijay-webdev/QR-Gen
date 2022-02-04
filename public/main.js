@@ -59,7 +59,7 @@ const handleTextRequest = async (url, paylaod) => {
 textForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const txtValue = textAreaElem.value.trim();
-    handleTextRequest("https://digvijay-qrgen.herokuapp.com//gen/text", txtValue);
+    handleTextRequest("https://digvijay-qrgen.herokuapp.com/gen/text", txtValue);
 
     textAreaElem.value = "";
 });
