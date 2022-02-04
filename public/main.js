@@ -40,7 +40,7 @@ const handleTextRequest = async (url, paylaod) => {
             try {
                 if (data.payload) {
                     localStorage.setItem("jpbqr", JSON.stringify(data.payload));
-                    location.replace("http://localhost:3000/");
+                    location.replace("https://digvijay-qrgen.herokuapp.com/");
                 } else if (data.message) {
                     alert(data.message);
                 }
@@ -59,7 +59,7 @@ const handleTextRequest = async (url, paylaod) => {
 textForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const txtValue = textAreaElem.value.trim();
-    handleTextRequest("http://localhost:3000/gen/text", txtValue);
+    handleTextRequest("https://digvijay-qrgen.herokuapp.com//gen/text", txtValue);
 
     textAreaElem.value = "";
 });
